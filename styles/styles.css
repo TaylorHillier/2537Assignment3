@@ -1,0 +1,167 @@
+
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #222;
+  --accent-color: #ef5350;
+  --button-bg: #fff;
+  --button-border: #ddd;
+  --button-hover-bg: #ef5350;
+  --button-hover-color: #fff;
+  --card-size: 100px;
+  --card-gap: 12px;
+}
+
+.dark-mode {
+  --bg-color: #222;
+  --text-color: #eee;
+  --accent-color: #ff8a80;
+  --button-bg: #333;
+  --button-border: #444;
+  --button-hover-bg: #ff8a80;
+  --button-hover-color: #222;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: var(--button-bg);
+  border-bottom: 1px solid var(--button-border);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+header .difficulty {
+  padding: 6px 14px;
+  background: var(--button-bg);
+  border: 1px solid var(--button-border);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: background .2s, color .2s;
+}
+
+header .difficulty.active,
+header .difficulty:hover {
+  background: var(--accent-color);
+  color: #fff;
+  border-color: var(--accent-color);
+}
+
+#mode-switch {
+  padding: 6px 12px;
+  background: var(--button-bg);
+  border: 1px solid var(--button-border);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: background .2s, color .2s;
+}
+
+#mode-switch:hover {
+  background: var(--button-hover-bg);
+  color: var(--button-hover-color);
+}
+
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+#game-canvas {
+  max-width: 720px;
+  width: 100%;
+  background: var(--button-bg);
+  border: 1px solid var(--button-border);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#reset, #start, #powerUp {
+  margin: 10px 5px 20px 0;
+  padding: 8px 16px;
+  background: var(--button-bg);
+  border: 1px solid var(--button-border);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: background .2s, color .2s;
+}
+
+#reset:hover, #start:hover, #powerUp:hover {
+  background: var(--accent-color);
+  color: #fff;
+  border-color: var(--accent-color);
+}
+
+.powerUp {
+    display: none;
+}
+
+#timer, #clickCount, #totalPairs, #pairsLeft, #matchedPairs {
+  margin: 6px 0;
+  font-weight: 500;
+}
+
+#game-container {
+  display: grid;
+  gap: var(--card-gap);
+  justify-content: center;
+  perspective: 800px;
+  margin-top: 20px;
+}
+
+.square {
+  width: var(--card-size);
+  height: var(--card-size);
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+
+.square.flipped {
+  transform: rotateY(180deg);
+}
+
+.square.powerflipped {
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 480px) {
+  :root { --card-size: 70px; }
+  header, #game-canvas { padding: 10px; }
+  header .difficulty, #mode-switch { padding: 4px 8px; }
+}
+
+

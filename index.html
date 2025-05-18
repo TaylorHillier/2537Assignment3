@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><button id="easy" class="difficulty" data-difficulty="easy">Easy</button></li>
+            <li><button id="medium" class="difficulty" data-difficulty="medium">Medium</button></li>
+            <li><button id="hard" class="difficulty" data-difficulty="hard">Hard</button></li>
+        </ul>
+        <button id="mode-switch" onclick=toggleMode><span id="currentMode"></span></button>
+    </header>
+
+    <main>
+        <div id="game-canvas">
+            <div id="board"></div>
+            <button id="reset" onclick=resetBoard>Reset</button>
+            <button id="start" onclick=startGame>Start</button>
+
+            <div id="timer">Time: <span id="time">60s</span></div>
+
+            <div id="clickCount"></div>
+            <div id="totalPairs"></div>
+            <div id="pairsLeft"></div>
+            <div id="matchedPairs"></div>
+
+            <div id="game-container">
+            </div>
+            <button id="powerUp" class="powerUp">Use Power Up (<span id="powerUpCount">1</span> left)</button>
+        </div>
+    </main>
+
+    <script src="./scripts/game.js"></script>
+</body>
+</html>
