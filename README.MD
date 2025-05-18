@@ -1,29 +1,31 @@
-Self-graded Assignment 3 Checklist
+# Self-graded Assignment 3 Checklist
 
-Student Name: Taylor Hillier
-Student Set: 1C
+**Student Name:** Taylor Hillier  
+**Student Set:** 1C
 
-Criteria	
-========
-/10 marks
-[x]  Pokemon cards are randomized each game.
+## Criteria
 
-/2 marks
-[x]  Cards flip when clicked.
-[x]  If the user clicks on the same card twice, do nothing.
-[x]  If the user clicks on a card that is already matched, do nothing.
-[x]  If the user clicks on a card while two cards are already flipped, do nothing.
+### 10 Marks
+- [x] Pokémon cards are randomized each game.
 
-/7 marks
-[x]  Winning Event is implemented. If user clicks on all the cards, display a winning message.
-[x]  Header is showing the number of clicks the user has made, and the number of pairs left, number of pairs matched, total number of pairs, and game timer.
-[x]  Start and Reset buttons are added to the game.
-[x]  Difficulty levels are added to the game.
-[x]  Themes are added to the game.
-[x]  Power-up logic is added to the game.
+### 2 Marks
+- [x] Cards flip when clicked.  
+- [x] If the user clicks on the same card twice, do nothing.  
+- [x] If the user clicks on a card that is already matched, do nothing.  
+- [x] If the user clicks on a card while two cards are already flipped, do nothing.
 
-/10 marks
-[x]  The website has an appealing, professional and consistent look.
+### 7 Marks
+- [x] Winning event is implemented: if the user clicks on all the cards, display a winning message.  
+- [x] Header shows number of clicks, pairs left, pairs matched, total pairs, and game timer.  
+- [x] Start and Reset buttons are added to the game.  
+- [x] Difficulty levels are added to the game.  
+- [x] Themes are added to the game.  
+- [x] Power-up logic is added to the game.
 
-Total Grade:
-70/70 (Total grade out of 70, first item is 10 marks, 2 marks each for next 4 items, 7 marks each for next 6 items and 10 marks for last item)
+### 10 Marks
+- [x] The website has an appealing, professional, and consistent look.
+
+---
+
+**Total Grade: 70 / 70**  
+*Total grade out of 70: 10 + (4 × 2) + (6 × 7) + 10 = 70*  
