@@ -137,7 +137,8 @@ function startTimer() {
         timerElement.textContent = `${currentTime}s`;
 
         if (currentTime <= 0) {
-            clearInterval(interval);
+            clearInterval(timerInterval);
+            currentTime = 0;
             alert('Game Over! Time is up!');
              document.querySelectorAll('.square').forEach(square => {
                 square.removeEventListener('click', handleSquareClick);

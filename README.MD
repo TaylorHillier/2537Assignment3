@@ -1,7 +1,10 @@
 Self-graded Assignment 3 Checklist
 
-    Criteria	
-    ========
+Student Name: Taylor Hillier
+Student Set: 1C
+
+Criteria	
+========
 /10 marks
 [x]  Pokemon cards are randomized each game.
 
